@@ -1,0 +1,10 @@
+{
+  "name": "@turbo-test/tokens",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "src/index.css",
+  "publishConfig": {
+    "access": "public"
+  }
+}

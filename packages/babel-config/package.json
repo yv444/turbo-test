@@ -1,0 +1,21 @@
+{
+  "name": "@repo/babel-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@testing-library/jest-dom": "^6.2.1",
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.11",
+    "@types/jest-axe": "^3.5.9",
+    "jest": "^29.7.0",
+    "jest-axe": "^8.0.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

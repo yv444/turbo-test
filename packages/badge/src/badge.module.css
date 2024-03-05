@@ -1,0 +1,80 @@
+.badge {
+  padding: var(--base-spacing-2xs) var(--base-spacing-xs);
+  border-radius: var(--base-border-radius-md);
+  font-family:
+    var(--base-font-font-family-default),
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Noto Sans",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+  font-style: normal;
+  font-weight: var(--base-font-font-weight-bold);
+  font-size: var(--base-font-font-size-xs);
+  line-height: var(--base-font-line-height-xs);
+  color: var(--intent-color-text-neutral-default);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.brand {
+  background-color: var(--intent-color-background-brand-default);
+}
+
+.brandSubtle {
+  background-color: var(--intent-color-background-brand-subtle);
+}
+
+.info {
+  background-color: var(--intent-color-background-info-default);
+}
+
+.infoSubtle {
+  background-color: var(--intent-color-background-info-subtle);
+}
+
+.warning {
+  background-color: var(--intent-color-background-warning-default);
+}
+
+.warningSubtle {
+  background-color: var(--intent-color-background-warning-subtle);
+}
+
+.negative {
+  background-color: var(--intent-color-background-danger-default);
+}
+
+.negativeSubtle {
+  background-color: var(--intent-color-background-danger-subtle);
+}
+
+.positive {
+  background-color: var(--intent-color-background-success-default);
+}
+
+.positiveSubtle {
+  background-color: var(--intent-color-background-success-subtle);
+}
+
+.neutral {
+  background-color: var(--intent-color-background-neutral-strong);
+  color: var(--intent-color-text-neutral-default);
+}
+
+.neutralSubtle {
+  background-color: var(--intent-color-background-neutral-subtle);
+  color: var(--intent-color-text-neutral-default);
+}
+
+.newStyle {
+  background-color: var(--intent-color-background-new-default);
+}
+
+.newStyleSubtle {
+  background-color: var(--intent-color-background-new-subtle);
+}
