@@ -1,5 +1,7 @@
+/* eslint-disable no-undef -- config file */
 /** @type {import('jest').Config} */
 const sharedConfig = require("@repo/jest-config/jest.config.js");
+
 const config = {
   ...sharedConfig,
 };

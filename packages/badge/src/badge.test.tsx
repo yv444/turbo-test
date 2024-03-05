@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/aria-role -- known issue with component */
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { axe, toHaveNoViolations } from "jest-axe";
@@ -10,7 +11,7 @@ const BADGE_TEXT = "BADGE_TEXT";
 describe("Badge a11y tests", () => {
   test("bold brand should have no violations", async () => {
     const badge = render(
-      <Badge role="brand" emphasis="bold">
+      <Badge emphasis="bold" role="brand">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -18,7 +19,7 @@ describe("Badge a11y tests", () => {
   });
   test("subtle brand should have no violations", async () => {
     const badge = render(
-      <Badge role="brand" emphasis="subtle">
+      <Badge emphasis="subtle" role="brand">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -26,7 +27,7 @@ describe("Badge a11y tests", () => {
   });
   test("bold positive should have no violations", async () => {
     const badge = render(
-      <Badge role="positive" emphasis="bold">
+      <Badge emphasis="bold" role="positive">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -34,7 +35,7 @@ describe("Badge a11y tests", () => {
   });
   test("subtle positive should have no violations", async () => {
     const badge = render(
-      <Badge role="positive" emphasis="subtle">
+      <Badge emphasis="subtle" role="positive">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -42,7 +43,7 @@ describe("Badge a11y tests", () => {
   });
   test("bold negative should have no violations", async () => {
     const badge = render(
-      <Badge role="negative" emphasis="bold">
+      <Badge emphasis="bold" role="negative">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -50,7 +51,7 @@ describe("Badge a11y tests", () => {
   });
   test("subtle negative should have no violations", async () => {
     const badge = render(
-      <Badge role="negative" emphasis="subtle">
+      <Badge emphasis="subtle" role="negative">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -58,7 +59,7 @@ describe("Badge a11y tests", () => {
   });
   test("bold warning should have no violations", async () => {
     const badge = render(
-      <Badge role="warning" emphasis="bold">
+      <Badge emphasis="bold" role="warning">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -66,7 +67,7 @@ describe("Badge a11y tests", () => {
   });
   test("subtle warning should have no violations", async () => {
     const badge = render(
-      <Badge role="warning" emphasis="subtle">
+      <Badge emphasis="subtle" role="warning">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -74,7 +75,7 @@ describe("Badge a11y tests", () => {
   });
   test("bold info should have no violations", async () => {
     const badge = render(
-      <Badge role="info" emphasis="bold">
+      <Badge emphasis="bold" role="info">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -82,7 +83,7 @@ describe("Badge a11y tests", () => {
   });
   test("subtle info should have no violations", async () => {
     const badge = render(
-      <Badge role="info" emphasis="subtle">
+      <Badge emphasis="subtle" role="info">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -90,7 +91,7 @@ describe("Badge a11y tests", () => {
   });
   test("bold neutral should have no violations", async () => {
     const badge = render(
-      <Badge role="neutral" emphasis="bold">
+      <Badge emphasis="bold" role="neutral">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);
@@ -98,7 +99,7 @@ describe("Badge a11y tests", () => {
   });
   test("subtle neutral should have no violations", async () => {
     const badge = render(
-      <Badge role="neutral" emphasis="subtle">
+      <Badge emphasis="subtle" role="neutral">
         {BADGE_TEXT}
       </Badge>
     ).getByText(BADGE_TEXT);

@@ -1,5 +1,4 @@
 import classnames from "classnames";
-
 import * as styles from "./badge.module.css";
 
 const {
@@ -20,20 +19,21 @@ const {
   newStyleSubtle,
 } = styles;
 
+type RoleType =
+  | "neutral"
+  | "info"
+  | "warning"
+  | "negative"
+  | "positive"
+  | "brand"
+  | "new";
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   /** Custom classes to merge with the root class name. */
   className?: string;
   /** The message inside the alert */
   children: string | number;
   /** The function of the badge */
-  role?:
-    | "neutral"
-    | "info"
-    | "warning"
-    | "negative"
-    | "positive"
-    | "brand"
-    | "new";
+  role?: RoleType;
   /** The type of the badge */
   emphasis?: "bold" | "subtle";
 }
@@ -45,33 +45,43 @@ export function Badge({
   emphasis = "subtle",
   ...otherProps
 }: BadgeProps): JSX.Element {
-  let colorClass = neutral;
+  let colorClass: string = neutral as string;
   switch (role) {
     case "info":
-      colorClass = emphasis === "bold" ? info : infoSubtle;
+      colorClass =
+        emphasis === "bold" ? (info as string) : (infoSubtle as string);
       break;
     case "warning":
-      colorClass = emphasis === "bold" ? warning : warningSubtle;
+      colorClass =
+        emphasis === "bold" ? (warning as string) : (warningSubtle as string);
       break;
     case "negative":
-      colorClass = emphasis === "bold" ? negative : negativeSubtle;
+      colorClass =
+        emphasis === "bold" ? (negative as string) : (negativeSubtle as string);
       break;
     case "positive":
-      colorClass = emphasis === "bold" ? positive : positiveSubtle;
+      colorClass =
+        emphasis === "bold" ? (positive as string) : (positiveSubtle as string);
       break;
     case "brand":
-      colorClass = emphasis === "bold" ? brand : brandSubtle;
+      colorClass =
+        emphasis === "bold" ? (brand as string) : (brandSubtle as string);
       break;
     case "neutral":
-      colorClass = emphasis === "bold" ? neutral : neutralSubtle;
+      colorClass =
+        emphasis === "bold" ? (neutral as string) : (neutralSubtle as string);
       break;
     case "new":
-      colorClass = emphasis === "bold" ? newStyle : newStyleSubtle;
+      colorClass =
+        emphasis === "bold" ? (newStyle as string) : (newStyleSubtle as string);
   }
   // classnames(badge, colorClass, className)
 
   return (
-    <span {...otherProps} className={classnames(badge, colorClass, className)}>
+    <span
+      {...otherProps}
+      className={classnames(badge as string, colorClass, className)}
+    >
       {children}
     </span>
   );
