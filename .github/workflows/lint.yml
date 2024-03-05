@@ -1,0 +1,22 @@
+name: ESLint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Code"
+        uses: actions/checkout@v3
+      - name: "Setup Node 18"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.0.0
+          cache: "npm"
+      - name: "Install Dependencies"
+        run: npm ci
+      - name: "Run ESLint on entire project"
+        run: npm run lint
