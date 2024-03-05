@@ -3,6 +3,7 @@ import { Badge } from "@turbo-test/badge";
 import "@turbo-test/tokens/src/tokens.css";
 
 const meta: Meta<typeof Badge> = {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment -- this has a type
   component: Badge,
   argTypes: {
     children: {
