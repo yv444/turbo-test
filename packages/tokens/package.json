@@ -5,6 +5,8 @@
   "license": "MIT",
   "main": "src/index.css",
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
-  }
+  },
+  "repository": "https://github.com/yv444/turbo-test.git"
 }
