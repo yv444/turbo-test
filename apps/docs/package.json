@@ -1,6 +1,6 @@
 {
   "name": "@repo/docs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@turbo-test/badge": "*",
-    "@turbo-test/tokens": "^0.0.0",
+    "@turbo-test/tokens": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
