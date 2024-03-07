@@ -1,10 +1,11 @@
 {
-  "name": "@turbo-test/tokens",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@yv444/tokens",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "src/index.css",
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
-  }
+  },
+  "repository": "https://github.com/yv444/turbo-test.git"
 }
