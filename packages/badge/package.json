@@ -1,5 +1,5 @@
 {
-  "name": "@turbo-test/badge",
+  "name": "@yv444/badge",
   "version": "1.0.0",
   "source": "src/index.tsx",
   "main": "./dist/index.js",

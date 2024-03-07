@@ -11,8 +11,8 @@
     "lint": "eslint ./stories/*.stories.tsx --max-warnings 0"
   },
   "dependencies": {
-    "@turbo-test/badge": "*",
-    "@turbo-test/tokens": "^1.0.0",
+    "@yv444/badge": "*",
+    "@yv444/tokens": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

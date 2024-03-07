@@ -1,4 +1,4 @@
-# @turbo-test/badge
+# @yv444/badge
 
 ## 1.0.0
 
