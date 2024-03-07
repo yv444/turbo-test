@@ -1,7 +1,6 @@
 {
   "name": "@yv444/tokens",
   "version": "1.0.0",
-  "private": true,
   "license": "MIT",
   "main": "src/index.css",
   "publishConfig": {
