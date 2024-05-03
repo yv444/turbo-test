@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+// eslint-disable-next-line import/no-unresolved -- path is correct
 import { Badge } from "@yv444/badge";
 import "@yv444/tokens/src/tokens.css";
 
