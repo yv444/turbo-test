@@ -82,7 +82,7 @@ export function Badge({
       {...otherProps}
       className={classnames(badge as string, colorClass, className)}
     >
-      {children}
+      {children}!!!!
     </span>
   );
 }
