@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Badge } from "@turbo-test/badge";
-import "@turbo-test/tokens/src/tokens.css";
+// eslint-disable-next-line import/no-unresolved -- path is correct
+import { Badge } from "@yv444/badge";
+import "@yv444/tokens/src/tokens.css";
 
 const meta: Meta<typeof Badge> = {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment -- this has a type
