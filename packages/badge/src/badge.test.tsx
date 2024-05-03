@@ -14,7 +14,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="bold" role="brand">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -22,7 +22,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="subtle" role="brand">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -30,7 +30,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="bold" role="positive">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -38,7 +38,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="subtle" role="positive">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -46,7 +46,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="bold" role="negative">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -54,7 +54,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="subtle" role="negative">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -62,7 +62,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="bold" role="warning">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -70,7 +70,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="subtle" role="warning">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -78,7 +78,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="bold" role="info">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -86,7 +86,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="subtle" role="info">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -94,7 +94,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="bold" role="neutral">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
@@ -102,7 +102,7 @@ describe("Badge a11y tests", () => {
     const badge = render(
       <Badge emphasis="subtle" role="neutral">
         {BADGE_TEXT}
-      </Badge>
+      </Badge>,
     ).getByText(BADGE_TEXT_OUTPUT);
     expect(await axe(badge)).toHaveNoViolations();
   });
